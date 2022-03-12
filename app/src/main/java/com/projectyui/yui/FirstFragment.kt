@@ -1,8 +1,10 @@
 package com.projectyui.yui
 
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
@@ -15,6 +17,7 @@ import com.projectyui.yui.databinding.FragmentFirstBinding
 class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
+    private var textToSpeech: TextToSpeech? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.

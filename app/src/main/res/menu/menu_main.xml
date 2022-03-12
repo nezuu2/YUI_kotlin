@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.projectyui.yui.MainActivity">
     <item
+        android:id="@+id/action_character"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_supervised_user_circle_24"
+        android:title="@string/action_character"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
+        android:icon="@drawable/ic_settings_24"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_charactor"
-        android:orderInCategory="100"
-        android:title="@string/action_character"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
 </menu>
