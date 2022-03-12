@@ -7,13 +7,14 @@
     tools:context=".FirstFragment"
     android:background="@drawable/yui">
 
-    <Button
+    <ImageButton
         android:id="@+id/button_tts"
         android:layout_width="119dp"
         android:layout_height="103dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/ic_baseline_mic_24"
+        android:background="@drawable/ic_mic_24"
+        android:contentDescription="音声認識をONにしました。なにか話しかけてください。"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

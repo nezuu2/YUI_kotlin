@@ -36,8 +36,16 @@ class FirstFragment : Fragment() {
 //        binding.buttonFirst.setOnClickListener {
 //            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
 //        }
+        var flg = true
         binding.buttonTts.setOnClickListener {
-            Toast.makeText(context, "トーストメッセージ", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, "Button has Clicked!", Toast.LENGTH_LONG).show()
+            if (flg) {
+                binding.buttonTts.setBackgroundResource(R.drawable.mouth)
+                flg = false
+            } else {
+                binding.buttonTts.setBackgroundResource(R.drawable.ic_mic_24)
+                flg = true
+            }
         }
     }
 
