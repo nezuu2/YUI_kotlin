@@ -11,10 +11,11 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import com.projectyui.yui.databinding.ActivityMainBinding
+import com.projectyui.yui.databinding.FragmentFirstBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
+//    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,42 +24,49 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
+//        setSupportActionBar(binding.toolbar)
 
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+//        val navController = findNavController(R.id.nav_host_fragment_content_main)
+//        appBarConfiguration = AppBarConfiguration(navController.graph)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "この機能は実装されていません。", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+//        binding.fab.setOnClickListener { view ->
+//            Snackbar.make(view, "この機能は実装されていません。", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+//        }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        R.id.action_settings -> {
-            Toast.makeText(this, "設定ボタン", Toast.LENGTH_LONG).show()
-            true
-        }
-        R.id.action_character -> {
-            Toast.makeText(this, "キャラクター変更ボタン", Toast.LENGTH_LONG).show()
-            true
-        }
-        else -> super.onOptionsItemSelected(item)
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
-    }
+//    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        menuInflater.inflate(R.menu.menu_main, menu)
+//        return true
+//    }
+//
+//    var flag: Boolean = true
+//
+//    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        R.id.action_settings -> {
+//            Toast.makeText(this, "設定ボタン", Toast.LENGTH_LONG).show()
+//            true
+//        }
+//        R.id.action_character -> {
+////            Toast.makeText(this, "キャラクターを変更しました", Toast.LENGTH_LONG).show()
+////            if (flag) {
+////                fragmentFirst.character.setImageResource(R.drawable.ic_mic_off_24)
+////            }else{
+////                fragmentFirst.character.setImageResource(R.drawable.yui)
+////            }
+//            true
+//        }
+//        else -> super.onOptionsItemSelected(item)
+//    }
+//
+//    override fun onSupportNavigateUp(): Boolean {
+//        val navController = findNavController(R.id.nav_host_fragment_content_main)
+//        return navController.navigateUp(appBarConfiguration)
+//                || super.onSupportNavigateUp()
+//    }
 }

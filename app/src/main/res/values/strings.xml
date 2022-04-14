@@ -1,13 +1,20 @@
 <resources>
     <string name="app_name">YUI</string>
+    <string name="app_version">YUI App version 1.2</string>
+    <!--  navigation上の三点マークに格納されてるボタン名  -->
     <string name="action_settings">Settings</string>
     <string name="action_character">Character</string>
-    <!-- Strings used for fragments for navigation -->
+
+    <!-- Fragmentのnavigationで使われているStringsです -->
     <string name="first_fragment_label">なにか話しかけてみよう!</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <!-- 自分が書いたStrings -->
+    <string name="error">No Activity</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+<!--    &lt;!&ndash; Next and Previousボタン   &ndash;&gt;-->
+<!--    <string name="next">Next</string>-->
+<!--    <string name="previous">Previous</string>-->
+<!--    &lt;!&ndash; Fragment内のテスト用の文字 &ndash;&gt;-->
+<!--    <string name="hello_first_fragment">Hello first fragment</string>-->
+<!--    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>-->
 </resources>
